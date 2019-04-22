@@ -1,6 +1,9 @@
-import {createStackNavigator, createAppContainer} from 'react-navigation';
+import React from 'react';
+import {Text} from 'react-native';
+import {createStackNavigator, createAppContainer, createBottomTabNavigator} from 'react-navigation';
 import ScheduleScreen from './screens/ScheduleScreen'
 import SettingsScreen from './screens/SettingsScreen'
+import DetailsScreen from './screens/DetailsScreen'
 
 const MainNavigator = createStackNavigator({
     Home: {screen: ScheduleScreen},
@@ -9,4 +12,20 @@ const MainNavigator = createStackNavigator({
 
 const App = createAppContainer(MainNavigator);
 
-export default App;
+const ScheduleStack = createStackNavigator({
+    Home: { screen: ScheduleScreen },
+    Details: { screen: DetailsScreen }
+});
+
+export default createAppContainer(createBottomTabNavigator(
+    {
+        Home: { screen: ScheduleStack },
+        Settings: { screen: SettingsScreen }
+    },
+    {
+        defaultNavigationOptions: ({ navigation }) => ({
+        }),
+    }
+));
+
+//export default App;
