@@ -13,15 +13,15 @@ class ScheduleScreen extends Component {
         dayId: null
     }
 
-    componentWillMount() {
-        const { navigation } = this.props;
-        this.state.dayId = navigation.getParam('day', 'not-set');
-
-        AsyncStorage.getItem('url').then((value) => this.setState({ url: value }))
+    async componentWillMount() {
 
     }
 
-    componentDidMount = () => {
+    async componentDidMount () {
+        const { navigation } = this.props;
+        this.state.dayId = navigation.getParam('day', 'not-set');
+
+        await AsyncStorage.getItem('url').then((value) => this.setState({ url: value }))
 
         axios.post('http://www.banfor.tk/tlu/schedule/', 'groupName=' + this.state.url)
             .then(res => {
@@ -29,9 +29,8 @@ class ScheduleScreen extends Component {
                 this.setState({ schedules });
             })
             .catch((error) => console.log(error));
-        }
 
-    //componentDidUpdate= () => AsyncStorage.getItem('url').then((value) => this.setState({ 'url': value }))
+    }
 
     render() {
         return (
