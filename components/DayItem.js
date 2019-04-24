@@ -9,7 +9,7 @@ const scheduleItem = (props) => {
             topDivider={true}
             onPress={() => {
                 props.navigation.navigate('Details', {
-                    day: props.dayId
+                    day: props.dayId,
                 });
             }}
             title={props.dayName}
