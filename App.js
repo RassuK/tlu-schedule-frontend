@@ -1,5 +1,4 @@
 import React from 'react';
-import {Text} from 'react-native';
 import {createStackNavigator, createAppContainer, createBottomTabNavigator} from 'react-navigation';
 import ScheduleScreen from './screens/ScheduleScreen'
 import SettingsScreen from './screens/SettingsScreen'

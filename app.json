@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "TestApp",
+    "url": "TestApp",
     "slug": "TestProject",
     "privacy": "public",
     "sdkVersion": "32.0.0",
