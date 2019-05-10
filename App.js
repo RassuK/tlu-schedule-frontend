@@ -7,21 +7,21 @@ import DetailsScreen from './screens/DetailsScreen'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const MainNavigator = createStackNavigator({
-    Schedule: {screen: ScheduleScreen},
-    Settings: {screen: SettingsScreen},
+    Kalender: {screen: ScheduleScreen},
+    Seaded: {screen: SettingsScreen},
 });
 
 const App = createAppContainer(MainNavigator);
 
 const ScheduleStack = createStackNavigator({
-    Schedule: { screen: ScheduleScreen },
+    Kalender: { screen: ScheduleScreen },
     Details: { screen: DetailsScreen },
 });
 
 export default createAppContainer(createBottomTabNavigator(
     {
-        Schedule: { screen: ScheduleStack },
-        Settings: { screen: SettingsScreen }
+        Kalender: { screen: ScheduleStack },
+        Seaded: { screen: SettingsScreen }
     },
     {
         defaultNavigationOptions: ({ navigation }) => ({
@@ -29,11 +29,11 @@ export default createAppContainer(createBottomTabNavigator(
                 const { routeName } = navigation.state;
                 let IconComponent = Ionicons;
                 let iconName;
-                if (routeName === 'Schedule') {
+                if (routeName === 'Kalender') {
                   iconName = `ios-book`;
                   // Sometimes we want to add badges to some icons. 
                   // You can check the implementation below.
-                } else if (routeName === 'Settings') {
+                } else if (routeName === 'Seaded') {
                   iconName = `ios-options`;
                 }
         

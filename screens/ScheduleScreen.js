@@ -8,7 +8,7 @@ import {ListItem} from "react-native-elements";
 class ScheduleScreen extends Component {
 
     static navigationOptions = {
-        title: 'Choose a day',
+        title: 'Vali nädalapäev',
     };
 
     state = {
