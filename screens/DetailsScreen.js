@@ -13,10 +13,6 @@ class ScheduleScreen extends Component {
         dayId: null
     }
 
-    async componentWillMount() {
-
-    }
-
     async componentDidMount () {
         const { navigation } = this.props;
         this.state.dayId = navigation.getParam('day', 'not-set');
@@ -30,7 +26,14 @@ class ScheduleScreen extends Component {
             })
             .catch((error) => console.log(error));
 
+
     }
+
+    static navigationOptions = ({ navigation }) => {
+        return {
+            title: navigation.getParam('dayname', 'not-set')
+        };
+    };
 
     render() {
         return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ScrollView, Text, AsyncStorage, TextInput, StyleSheet} from 'react-native';
+import {ScrollView, AsyncStorage, StyleSheet, Button} from 'react-native';
 import axios from "axios";
 import GroupItem from "../components/GroupItem";
 
@@ -40,7 +40,6 @@ class SettingsScreen extends Component {
         AsyncStorage.setItem('url', value);
         this.setState({ 'url': value });
     }
-
 
 
     render() {

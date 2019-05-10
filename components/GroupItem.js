@@ -7,7 +7,6 @@ const groupItem = (props) => {
 
     return (
         <ListItem
-            //onPress={() => props.navigation.navigate('Details')}
             onPress={() => AsyncStorage.setItem('url', props.groupId)}
             topDivider={true}
             title={props.groupName}

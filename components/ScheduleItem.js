@@ -6,7 +6,6 @@ const scheduleItem = (props) => {
 
     return (
         <ListItem
-            onPress={() => props.navigation.navigate('Details')}
             topDivider={true}
             title={props.lectureName}
             subtitle={props.lecturerName + " / " + props.classRoom}

@@ -10,6 +10,7 @@ const scheduleItem = (props) => {
             onPress={() => {
                 props.navigation.navigate('Details', {
                     day: props.dayId,
+                    dayname: props.dayName
                 });
             }}
             title={props.dayName}

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import {ScrollView, Button, AsyncStorage, Text} from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import DayItem from '../components/DayItem'
 import {ListItem} from "react-native-elements";
 
 class ScheduleScreen extends Component {
+
+    static navigationOptions = {
+        title: 'Choose a day',
+    };
 
     state = {
         days:[
