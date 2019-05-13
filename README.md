@@ -1,6 +1,6 @@
 # TLU Schedule Front-End
 
-View your daily lecture schedule comfortably
+Vaata tunniplaani mugavalt.
 
 ## Setup
 ```
@@ -24,3 +24,7 @@ Rasmus - React-native Front-End
 Tim - serveri seadistus, NodeJS back-end(tunniplaan)
 
 Jaroslava - serveri seadistus, NodeJS back-end(kõikide gruppide nimekiri)
+
+## Demo
+
+https://youtu.be/EReqZqn5poU
