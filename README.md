@@ -17,3 +17,8 @@ Valisime react-native, sest react on meil kõige rohkem kasutatavust leidnud fro
 
 ## Rakenduse idee
 Idee on saada mugavamalt ligi enda kursuse tunniplaanile, kuna tundsime et telefoniga tunniplaani vaatamine ASIO süsteemis on ebamugav.
+
+## Meeskonnaliikmete panus
+Rasmus - React-native Front-End
+Tim - serveri seadistus, NodeJS back-end(tunniplaan)
+Jaroslava - serveri seadistus, NodeJS back-end(kõikide gruppide nimekiri)
