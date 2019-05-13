@@ -20,5 +20,7 @@ Idee on saada mugavamalt ligi enda kursuse tunniplaanile, kuna tundsime et telef
 
 ## Meeskonnaliikmete panus
 Rasmus - React-native Front-End
+
 Tim - serveri seadistus, NodeJS back-end(tunniplaan)
+
 Jaroslava - serveri seadistus, NodeJS back-end(kõikide gruppide nimekiri)
